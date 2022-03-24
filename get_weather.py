@@ -17,4 +17,3 @@ def get_weather():
         weather_data = weather_response.json()
         with open(f'data/{name}.json', 'w') as f:
             json.dump(weather_data, f, indent=4)
-
