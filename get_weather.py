@@ -1,19 +1,22 @@
 import requests
-import json
 
-def get_weather():
-    input_ = input('Type your city here: ')
 
-    response_cities_data = requests.get('https://www.metaweather.com/api/location/search/', params={'query': input_})
+def find_cities_and_id(input_city):
+    response_cities_data = requests.get('https://www.metaweather.com/api/location/search/', params={'query': input_city})
     cities_data = response_cities_data.json()
 
     name_woeid = dict()
     for city in cities_data:
+        name_ = city["title"]
         name_woeid[city["title"]] = city['woeid']
-    print(name_woeid)
+    return name_woeid, name_
 
-    for name, woeid in name_woeid.items():
+
+def get_whether_data(x):
+    res = []
+    for name, woeid in x.items():
         weather_response = requests.get(f'https://www.metaweather.com/api/location/{woeid}/')
         weather_data = weather_response.json()
-        with open(f'data/{name}.json', 'w') as f:
-            json.dump(weather_data, f, indent=4)
+
+
+        yield name, weather_data
