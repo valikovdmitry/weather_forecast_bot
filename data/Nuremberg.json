@@ -1,0 +1,159 @@
+{
+    "consolidated_weather": [
+        {
+            "id": 6639882714742784,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "NW",
+            "created": "2022-03-24T17:25:14.394798Z",
+            "applicable_date": "2022-03-24",
+            "min_temp": 2.945,
+            "max_temp": 19.345,
+            "the_temp": 16.66,
+            "wind_speed": 1.8819054720432673,
+            "wind_direction": 319.0,
+            "air_pressure": 1027.0,
+            "humidity": 49,
+            "visibility": 9.999726596675416,
+            "predictability": 68
+        },
+        {
+            "id": 6632885273493504,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "NE",
+            "created": "2022-03-24T17:25:17.637792Z",
+            "applicable_date": "2022-03-25",
+            "min_temp": 3.0,
+            "max_temp": 18.04,
+            "the_temp": 15.73,
+            "wind_speed": 3.0206515946870276,
+            "wind_direction": 38.0,
+            "air_pressure": 1027.0,
+            "humidity": 50,
+            "visibility": 9.999726596675416,
+            "predictability": 68
+        },
+        {
+            "id": 5066453792325632,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "NE",
+            "created": "2022-03-24T17:25:20.579999Z",
+            "applicable_date": "2022-03-26",
+            "min_temp": 3.085,
+            "max_temp": 18.07,
+            "the_temp": 16.09,
+            "wind_speed": 3.0494842122007477,
+            "wind_direction": 34.50000000000001,
+            "air_pressure": 1028.0,
+            "humidity": 42,
+            "visibility": 9.999726596675416,
+            "predictability": 68
+        },
+        {
+            "id": 6186745713393664,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "NNE",
+            "created": "2022-03-24T17:25:23.307307Z",
+            "applicable_date": "2022-03-27",
+            "min_temp": 3.63,
+            "max_temp": 19.075000000000003,
+            "the_temp": 17.4,
+            "wind_speed": 2.3883631591505607,
+            "wind_direction": 13.500000000000002,
+            "air_pressure": 1027.0,
+            "humidity": 50,
+            "visibility": 9.999726596675416,
+            "predictability": 68
+        },
+        {
+            "id": 5960609611907072,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "WNW",
+            "created": "2022-03-24T17:25:26.645561Z",
+            "applicable_date": "2022-03-28",
+            "min_temp": 5.65,
+            "max_temp": 18.345,
+            "the_temp": 17.48,
+            "wind_speed": 2.299332895888014,
+            "wind_direction": 303.0,
+            "air_pressure": 1023.0,
+            "humidity": 58,
+            "visibility": 9.999726596675416,
+            "predictability": 68
+        },
+        {
+            "id": 4630497733902336,
+            "weather_state_name": "Heavy Cloud",
+            "weather_state_abbr": "hc",
+            "wind_direction_compass": "NNW",
+            "created": "2022-03-24T17:25:29.271544Z",
+            "applicable_date": "2022-03-29",
+            "min_temp": 5.905,
+            "max_temp": 17.555,
+            "the_temp": 17.21,
+            "wind_speed": 2.733560804899388,
+            "wind_direction": 337.5,
+            "air_pressure": 1011.0,
+            "humidity": 55,
+            "visibility": 9.999726596675416,
+            "predictability": 71
+        }
+    ],
+    "time": "2022-03-24T18:38:35.971401+01:00",
+    "sun_rise": "2022-03-24T06:10:20.652594+01:00",
+    "sun_set": "2022-03-24T18:34:36.034011+01:00",
+    "timezone_name": "LMT",
+    "parent": {
+        "title": "Germany",
+        "location_type": "Country",
+        "woeid": 23424829,
+        "latt_long": "51.164181,10.454150"
+    },
+    "sources": [
+        {
+            "title": "BBC",
+            "slug": "bbc",
+            "url": "http://www.bbc.co.uk/weather/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Forecast.io",
+            "slug": "forecast-io",
+            "url": "http://forecast.io/",
+            "crawl_rate": 480
+        },
+        {
+            "title": "HAMweather",
+            "slug": "hamweather",
+            "url": "http://www.hamweather.com/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "OpenWeatherMap",
+            "slug": "openweathermap",
+            "url": "http://openweathermap.org/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Weather Underground",
+            "slug": "wunderground",
+            "url": "https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+            "crawl_rate": 720
+        },
+        {
+            "title": "World Weather Online",
+            "slug": "world-weather-online",
+            "url": "http://www.worldweatheronline.com/",
+            "crawl_rate": 360
+        }
+    ],
+    "title": "Nuremberg",
+    "location_type": "City",
+    "woeid": 680564,
+    "latt_long": "49.454342,11.07349",
+    "timezone": "Europe/Berlin"
+}
