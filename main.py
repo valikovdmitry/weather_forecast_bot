@@ -8,6 +8,6 @@ city = 'san '
 
 name_woeid = get_name_woeid(city)
 
-data = get_whether(name_woeid)
+wheather = get_whether(name_woeid)
 
-save_weather(data, 'data')
+save_weather(wheather, 'data')

@@ -11,9 +11,9 @@ def get_name_woeid(input_city):
     return name_woeid
 
 
-def get_whether(x):
+def get_whether(name_woeid):
     res = dict()
-    for name, woeid in x.items():
+    for name, woeid in name_woeid.items():
         weather_response = requests.get(f'https://www.metaweather.com/api/location/{woeid}/')
         weather_data = weather_response.json()
 
