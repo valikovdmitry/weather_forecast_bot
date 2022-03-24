@@ -2,7 +2,8 @@ from getter import *
 from saver import *
 
 
-city = input('Type a city: ')
+# city = input('Type a city: ')
+city = 'los '
 
 
 name_woeid = get_name_woeid(city)
