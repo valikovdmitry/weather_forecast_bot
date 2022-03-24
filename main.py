@@ -3,7 +3,7 @@ from saver import *
 
 
 # city = input('Type a city: ')
-city = 'los '
+city = 'san '
 
 
 name_woeid = get_name_woeid(city)

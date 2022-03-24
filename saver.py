@@ -3,8 +3,9 @@ from os import chdir, mkdir
 from datetime import datetime
 
 def save_weather(weather_data, location):
+    dir_prename = datetime.now()
+    dir_name = dir_prename.strftime("%Y-%d-%m %H:%M:%S")
     chdir("data")
-    dir_name = str(datetime.now())
     mkdir(dir_name)
     chdir("..")
 
