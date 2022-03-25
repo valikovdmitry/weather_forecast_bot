@@ -1,13 +1,22 @@
+# cначала импорты внешние потом внутр(алф пор), фромы внешние потом внутр(алф пор), константы, функции
+import argparse
+
 from getter import *
 from saver import *
 
 
-# city = input('Type a city: ')
-city = 'san '
+DEFAULT_LOCATION = 'data' # глобальные переменные которые не меняются - КОНСТАНТА - пишем все апперкейсом
 
 
-name_woeid = get_name_woeid(city)
+def get_args():
+    # написать так, чтобы в мейне в функции ниче указывалось в аргументах, а писались эти аргументы
 
-wheather = get_whether(name_woeid)
 
-save_weather(wheather, 'data')
+def main(city, location = DEFAULT_LOCATION):  # это скрипт
+    name_woeid = get_name_woeid(city)
+    wheather = get_whether(name_woeid)
+    save_weather(wheather, location)
+
+
+if __name__ == '__main__':
+    main('san ')
