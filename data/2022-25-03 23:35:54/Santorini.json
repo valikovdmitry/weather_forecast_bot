@@ -1,0 +1,165 @@
+{
+    "consolidated_weather": [
+        {
+            "id": 4749292636995584,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "W",
+            "created": "2022-03-25T20:00:02.775710Z",
+            "applicable_date": "2022-03-25",
+            "min_temp": 12.684999999999999,
+            "max_temp": 17.78,
+            "the_temp": 16.605,
+            "wind_speed": 12.157236753267584,
+            "wind_direction": 272.65326132565343,
+            "air_pressure": 1022.0,
+            "humidity": 69,
+            "visibility": 12.726303388212838,
+            "predictability": 68
+        },
+        {
+            "id": 5621155898589184,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "N",
+            "created": "2022-03-25T20:00:06.348788Z",
+            "applicable_date": "2022-03-26",
+            "min_temp": 13.56,
+            "max_temp": 16.265,
+            "the_temp": 15.965,
+            "wind_speed": 12.481678523261486,
+            "wind_direction": 2.8439731313640966,
+            "air_pressure": 1027.5,
+            "humidity": 63,
+            "visibility": 13.229303368328958,
+            "predictability": 68
+        },
+        {
+            "id": 5640026273611776,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "N",
+            "created": "2022-03-25T20:00:09.363025Z",
+            "applicable_date": "2022-03-27",
+            "min_temp": 13.36,
+            "max_temp": 15.969999999999999,
+            "the_temp": 15.614999999999998,
+            "wind_speed": 5.505924426156579,
+            "wind_direction": 360.0,
+            "air_pressure": 1031.0,
+            "humidity": 57,
+            "visibility": 13.249187246480552,
+            "predictability": 68
+        },
+        {
+            "id": 5772984636669952,
+            "weather_state_name": "Heavy Cloud",
+            "weather_state_abbr": "hc",
+            "wind_direction_compass": "ESE",
+            "created": "2022-03-25T20:00:12.463976Z",
+            "applicable_date": "2022-03-28",
+            "min_temp": 14.495000000000001,
+            "max_temp": 16.515,
+            "the_temp": 16.235,
+            "wind_speed": 6.182412548214427,
+            "wind_direction": 107.51475264175205,
+            "air_pressure": 1028.5,
+            "humidity": 64,
+            "visibility": 12.732206414539093,
+            "predictability": 71
+        },
+        {
+            "id": 5907283297959936,
+            "weather_state_name": "Heavy Cloud",
+            "weather_state_abbr": "hc",
+            "wind_direction_compass": "SE",
+            "created": "2022-03-25T20:00:20.332107Z",
+            "applicable_date": "2022-03-29",
+            "min_temp": 14.635000000000002,
+            "max_temp": 16.445,
+            "the_temp": 16.080000000000002,
+            "wind_speed": 13.542945462695196,
+            "wind_direction": 133.3349908640192,
+            "air_pressure": 1018.5,
+            "humidity": 75,
+            "visibility": 12.591155153901216,
+            "predictability": 71
+        },
+        {
+            "id": 6423251442991104,
+            "weather_state_name": "Heavy Cloud",
+            "weather_state_abbr": "hc",
+            "wind_direction_compass": "S",
+            "created": "2022-03-25T20:00:17.574742Z",
+            "applicable_date": "2022-03-30",
+            "min_temp": 14.74,
+            "max_temp": 17.17,
+            "the_temp": 15.64,
+            "wind_speed": 5.548434144595562,
+            "wind_direction": 171.0,
+            "air_pressure": 1018.0,
+            "humidity": 76,
+            "visibility": 9.999726596675416,
+            "predictability": 71
+        }
+    ],
+    "time": "2022-03-25T22:36:00.134083+02:00",
+    "sun_rise": "2022-03-25T06:14:49.727491+02:00",
+    "sun_set": "2022-03-25T18:34:07.012545+02:00",
+    "timezone_name": "LMT",
+    "parent": {
+        "title": "Greece",
+        "location_type": "Country",
+        "woeid": 23424833,
+        "latt_long": "39.072449,21.845560"
+    },
+    "sources": [
+        {
+            "title": "BBC",
+            "slug": "bbc",
+            "url": "http://www.bbc.co.uk/weather/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Forecast.io",
+            "slug": "forecast-io",
+            "url": "http://forecast.io/",
+            "crawl_rate": 480
+        },
+        {
+            "title": "HAMweather",
+            "slug": "hamweather",
+            "url": "http://www.hamweather.com/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Met Office",
+            "slug": "met-office",
+            "url": "http://www.metoffice.gov.uk/",
+            "crawl_rate": 180
+        },
+        {
+            "title": "OpenWeatherMap",
+            "slug": "openweathermap",
+            "url": "http://openweathermap.org/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Weather Underground",
+            "slug": "wunderground",
+            "url": "https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+            "crawl_rate": 720
+        },
+        {
+            "title": "World Weather Online",
+            "slug": "world-weather-online",
+            "url": "http://www.worldweatheronline.com/",
+            "crawl_rate": 360
+        }
+    ],
+    "title": "Santorini",
+    "location_type": "City",
+    "woeid": 56558361,
+    "latt_long": "36.406651,25.456530",
+    "timezone": "Europe/Athens"
+}

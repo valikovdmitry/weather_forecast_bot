@@ -1,0 +1,159 @@
+{
+    "consolidated_weather": [
+        {
+            "id": 5256372414316544,
+            "weather_state_name": "Light Cloud",
+            "weather_state_abbr": "lc",
+            "wind_direction_compass": "WNW",
+            "created": "2022-03-25T18:03:01.144852Z",
+            "applicable_date": "2022-03-25",
+            "min_temp": 7.825,
+            "max_temp": 18.115000000000002,
+            "the_temp": 17.19,
+            "wind_speed": 6.046988785492722,
+            "wind_direction": 295.5,
+            "air_pressure": 1010.0,
+            "humidity": 51,
+            "visibility": 9.999726596675416,
+            "predictability": 70
+        },
+        {
+            "id": 6522851566813184,
+            "weather_state_name": "Clear",
+            "weather_state_abbr": "c",
+            "wind_direction_compass": "WNW",
+            "created": "2022-03-25T18:03:04.067343Z",
+            "applicable_date": "2022-03-26",
+            "min_temp": 7.79,
+            "max_temp": 22.865000000000002,
+            "the_temp": 23.43,
+            "wind_speed": 4.086720154298895,
+            "wind_direction": 283.0,
+            "air_pressure": 1011.0,
+            "humidity": 43,
+            "visibility": 9.999726596675416,
+            "predictability": 68
+        },
+        {
+            "id": 6184116891418624,
+            "weather_state_name": "Light Cloud",
+            "weather_state_abbr": "lc",
+            "wind_direction_compass": "W",
+            "created": "2022-03-25T18:03:07.030719Z",
+            "applicable_date": "2022-03-27",
+            "min_temp": 10.105,
+            "max_temp": 25.02,
+            "the_temp": 25.39,
+            "wind_speed": 4.120796746997534,
+            "wind_direction": 280.5,
+            "air_pressure": 1014.0,
+            "humidity": 31,
+            "visibility": 9.999726596675416,
+            "predictability": 70
+        },
+        {
+            "id": 6343665799659520,
+            "weather_state_name": "Light Cloud",
+            "weather_state_abbr": "lc",
+            "wind_direction_compass": "WNW",
+            "created": "2022-03-25T18:03:10.648513Z",
+            "applicable_date": "2022-03-28",
+            "min_temp": 11.129999999999999,
+            "max_temp": 24.16,
+            "the_temp": 26.41,
+            "wind_speed": 5.520565099817068,
+            "wind_direction": 295.50000000000006,
+            "air_pressure": 1013.0,
+            "humidity": 32,
+            "visibility": 9.999726596675416,
+            "predictability": 70
+        },
+        {
+            "id": 6578231143563264,
+            "weather_state_name": "Showers",
+            "weather_state_abbr": "s",
+            "wind_direction_compass": "SSW",
+            "created": "2022-03-25T18:03:13.026805Z",
+            "applicable_date": "2022-03-29",
+            "min_temp": 11.74,
+            "max_temp": 19.005,
+            "the_temp": 25.56,
+            "wind_speed": 7.432035114928816,
+            "wind_direction": 210.99999999999997,
+            "air_pressure": 1006.0,
+            "humidity": 57,
+            "visibility": 9.76546965720194,
+            "predictability": 73
+        },
+        {
+            "id": 6720849156505600,
+            "weather_state_name": "Light Cloud",
+            "weather_state_abbr": "lc",
+            "wind_direction_compass": "W",
+            "created": "2022-03-25T18:03:16.217346Z",
+            "applicable_date": "2022-03-30",
+            "min_temp": 6.865,
+            "max_temp": 16.365,
+            "the_temp": 17.26,
+            "wind_speed": 7.060049312017815,
+            "wind_direction": 264.99999999999994,
+            "air_pressure": 1022.0,
+            "humidity": 41,
+            "visibility": 9.999726596675416,
+            "predictability": 70
+        }
+    ],
+    "time": "2022-03-25T14:36:03.449702-06:00",
+    "sun_rise": "2022-03-25T07:00:12.168391-06:00",
+    "sun_set": "2022-03-25T19:19:06.568244-06:00",
+    "timezone_name": "LMT",
+    "parent": {
+        "title": "New Mexico",
+        "location_type": "Region / State / Province",
+        "woeid": 2347590,
+        "latt_long": "34.166119,-106.026123"
+    },
+    "sources": [
+        {
+            "title": "BBC",
+            "slug": "bbc",
+            "url": "http://www.bbc.co.uk/weather/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Forecast.io",
+            "slug": "forecast-io",
+            "url": "http://forecast.io/",
+            "crawl_rate": 480
+        },
+        {
+            "title": "HAMweather",
+            "slug": "hamweather",
+            "url": "http://www.hamweather.com/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "OpenWeatherMap",
+            "slug": "openweathermap",
+            "url": "http://openweathermap.org/",
+            "crawl_rate": 360
+        },
+        {
+            "title": "Weather Underground",
+            "slug": "wunderground",
+            "url": "https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+            "crawl_rate": 720
+        },
+        {
+            "title": "World Weather Online",
+            "slug": "world-weather-online",
+            "url": "http://www.worldweatheronline.com/",
+            "crawl_rate": 360
+        }
+    ],
+    "title": "Santa Fe",
+    "location_type": "City",
+    "woeid": 2488867,
+    "latt_long": "35.666431,-105.972572",
+    "timezone": "US/Mountain"
+}
