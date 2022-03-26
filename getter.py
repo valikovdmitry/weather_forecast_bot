@@ -18,3 +18,4 @@ def get_whether(name_woeid):
         weather_data = weather_response.json()
 
         yield name, weather_data
+

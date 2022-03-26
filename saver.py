@@ -21,3 +21,4 @@ def save_weather(weather, location):
                 print(f'{name} saved!')
             else:
                 print(f'{name} saved into /{dir_}!')
+
