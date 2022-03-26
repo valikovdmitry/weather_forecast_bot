@@ -15,3 +15,4 @@ def main(city, location = DEFAULT_LOCATION):  # это скрипт
 
 if __name__ == '__main__':
     main(city, dir_)
+
