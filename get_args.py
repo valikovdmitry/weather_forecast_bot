@@ -11,4 +11,4 @@ def get_args():
 
     return city, dir
 
-city, dir_ = get_args()
+

@@ -1,5 +1,5 @@
 # cначала импорты внешние потом внутр(алф пор), фромы внешние потом внутр(алф пор), константы, функции
-from get_args import city, dir_
+from get_args import get_args
 from getter import *
 from saver import *
 
@@ -14,5 +14,6 @@ def main(city, location = DEFAULT_LOCATION):  # это скрипт
 
 
 if __name__ == '__main__':
+    city, dir_ = get_args()
     main(city, dir_)
 
