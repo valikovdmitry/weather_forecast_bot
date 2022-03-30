@@ -9,7 +9,7 @@ def save_weather(weather, location):
         os.mkdir(location)
 
     # создаю внутри location папку с именем по дате
-    dir_name = str(datetime.now().strftime("%Y-%d-%m %H:%M:%S"))
+    dir_name = str(datetime.now().strftime("%d_%b_%H:%M"))
     os.makedirs(os.path.join(location, dir_name))
 
     # записываю все данные по городам в одноименные файлы
