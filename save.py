@@ -1,5 +1,5 @@
 import psycopg2
-
+from datetime import datetime
 
 def save_db(parsed):
     city_name = parsed[0]
@@ -30,6 +30,9 @@ def save_db(parsed):
     sunrise = parsed[25]
     sunset = parsed[26]
 
+    now = datetime.now()
+    request_time = now.strftime("%Y-%m-%d %H:%M:%S")
+
     conn = psycopg2.connect(dbname='test_db', user='di',
                             password='1111', host='192.168.1.100', port=5432)
     cursor = conn.cursor()
@@ -51,7 +54,8 @@ def save_db(parsed):
         feels_like,
         wind_speed,
         sunrise,
-        sunset
+        sunset,
+        request_time
         )
     VALUES (
         '{city_id}',
@@ -64,7 +68,8 @@ def save_db(parsed):
         '{morning_feels_like}',
         '{morning_wind_speed}',
         '{sunrise}',
-        '{sunset}'
+        '{sunset}',
+        '{request_time}'
         );
     INSERT INTO weather (
         city_id,
@@ -77,7 +82,8 @@ def save_db(parsed):
         feels_like,
         wind_speed,
         sunrise,
-        sunset
+        sunset,
+        request_time
         )
     VALUES (
         '{city_id}',
@@ -90,7 +96,8 @@ def save_db(parsed):
         '{day_feels_like}',
         '{day_wind_speed}',
         '{sunrise}',
-        '{sunset}'
+        '{sunset}',
+        '{request_time}'
         );
     INSERT INTO weather (
         city_id,
@@ -103,7 +110,8 @@ def save_db(parsed):
         feels_like,
         wind_speed,
         sunrise,
-        sunset
+        sunset,
+        request_time
         )
     VALUES (
         '{city_id}',
@@ -116,7 +124,8 @@ def save_db(parsed):
         '{evening_feels_like}',
         '{evening_wind_speed}',
         '{sunrise}',
-        '{sunset}'
+        '{sunset}',
+        '{request_time}'
         )
     ;""")
 
