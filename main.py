@@ -1,22 +1,21 @@
 # cначала импорты внешние потом внутр(алф пор), фромы внешние потом внутр(алф пор), константы, функции
-from get_args import get_args
-from getter import *
-from path_manager import PathManager
+from get import *
+from parse import *
+from save import *
+from find import *
 
 
-DEFAULT_LOCATION = 'data' # глобальные переменные которые не меняются - КОНСТАНТА - пишем все апперкейсом
+API_KEY_OPENWEATHER = "7cd5dc8b0ff00c17b7bd39ee80c7a615"
 
 
-def main(city, manager):  # это скрипт
-    name_woeid = get_name_woeid(city)
-    wheather = get_whether(name_woeid)
-    manager.save_weather(wheather)
-    manager.print_weather(city)
-
-
+def main(city):  # это скрипт
+    wheather = get_whether(city)
+    parsed = json_parse(wheather)
+    save_db(parsed)
+    print('Sucsess!')
 
 
 if __name__ == '__main__':
-    city, dir_ = get_args()
-    manager = PathManager(dir_)
-    main(city, manager)
+    cities = requested()
+    for city in cities:
+        main(city)

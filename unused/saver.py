@@ -1,7 +1,7 @@
 import json
 import os
 from datetime import datetime
-from get_args import dir_
+from args import dir_
 
 def save_weather(weather, location):
     # создаю папку location если ее нет

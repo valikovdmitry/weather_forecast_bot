@@ -1,5 +1,7 @@
 .idea/
 venv/
-new_dir/
 data/
+database/
+unused/
+
 
