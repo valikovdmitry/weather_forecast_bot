@@ -1,0 +1,28 @@
+# UTC +1   London           3600
+# UTC +2   Paris            7200
+# UTC +3   Moscow          10800
+# UTC +4   Oman            14400
+# UTC +5   Ekaterinburg    18000
+# UTC +6   Dhaka           21600
+# UTC +7   Jakarta         25200
+# UTC +8   Shanghai        28800
+# UTC +9   Seoul           32400
+# UTC +10  Sydney          36000
+# UTC +11  Magadan         39600
+# UTC +12  Auckland        43200
+# UTC -11  Pago Pago      -39600
+# UTC -10  Honolulu       -36000
+# UTC -9   Adak           -32400
+# UTC -8   Kenai          -28800
+# UTC -7   San Diego      -25200
+# UTC -6   Denver         -21600
+# UTC -5   Chicago        -18000
+# UTC -4   Detroit        -14400
+# UTC -3   Rio de Janeiro -10800
+# UTC -2   Nuuk            -7200
+# UTC -1   Praia           -3600
+# UTC  0   Dakar               0
+
+
+
+

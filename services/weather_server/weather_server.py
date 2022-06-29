@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import psycopg2
 from datetime import datetime
 
 
 app = Flask(__name__)
 
-# всегда пиши пинг ручка
+
 @app.route('/')
 def hello():
     return 'Hello!', 200
@@ -109,11 +109,11 @@ def get_weather_prediction():
     WHERE
             service_user.tg_id = '{tg_id}'
         AND
-            weather.forecast_date > '{now}'
+            weather.forecast_date = '{now}'
     ;""")
 
     data = cursor.fetchall()
-
+    print(data)
     if len(data) == 0:
         return 'You are not login.', 401
 
@@ -267,6 +267,52 @@ def get_all_user_id():
 
     return res_tupl, 200
 
+# get needed user_id
+@app.route('/get_needed_city_name', methods=['GET'])
+def get_needed_city_name():
+    # connect to DB
+    conn = psycopg2.connect(dbname='test_db', user='di',
+                            password='1111', host='192.168.1.100', port=5432)
+    cursor = conn.cursor()
+
+    timezone_id = request.args['timezone_id']
+
+    cursor.execute(f"""
+        SELECT 
+            city_name, 
+            tg_id
+        FROM
+            service_user
+        JOIN
+            service_city
+        ON
+            service_user.city_id = service_city.id
+        WHERE
+            timezone_id = {timezone_id}
+        ;""")
+
+    data = cursor.fetchall()
+    cursor.close()
+    conn.close()
+
+    # print(data)
+    # print(type(data))
+
+    if len(data) > 0:
+        d = dict()
+        for i in data:
+            if i[0] not in d:
+                d[i[0]] = [i[1]]
+            else:
+                d[i[0]].append(i[1])
+        print(d)
+        return d, 200
+    else:
+        print('Not found')
+        return 'Not found', 200
+
+
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=5000)
+    app.run('0.0.0.0', port=5000)
+
