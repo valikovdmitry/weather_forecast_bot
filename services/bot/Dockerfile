@@ -1,6 +1,6 @@
 FROM python:3.7
-COPY . /bot
+COPY ./services/bot /bot
 WORKDIR /bot
-RUN pip install -r requirements.txt
+RUN pip install -r /bot/requirements.txt
 ENTRYPOINT ["python3"]
 CMD ["bot.py"]

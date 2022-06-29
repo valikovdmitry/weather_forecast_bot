@@ -1,0 +1,27 @@
+
+version: "2.6"
+
+services:
+
+  weather_server:
+    build:
+      context: .
+      dockerfile: services/weather_server/Dockerfile
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test: curl -f http://localhost:5000/
+      interval: 10s
+      timeout: 10s
+      retries: 50
+    volumes:
+      - ./services/weather_server:/weather_server:rw
+
+  bot:
+    build:
+      context: .
+      dockerfile: services/bot/Dockerfile
+    depends_on:
+      - weather_server
+    volumes:
+      - ./services/bot:/bot:rw
